@@ -11,6 +11,12 @@ Usage
     <script src="taptempo.js" type="text/javascript"></script>
     <script type="text/javascript">
       var taptempo = new Taptempo(options);
+
+      $(window).keydown(function(e) {
+        if (e.keyCode == 32) { // space
+          console.log(taptempo.tap());
+        }
+      });
     </script>
 
 Options
